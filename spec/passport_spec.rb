@@ -9,5 +9,10 @@ describe(Passport) do
       expect(test_place.places()).to(eq("Zimbabwe"))
     end
   end
+  describe(".all_places") do
+    it("returns an empty array") do
+      expect(Passport.all_places()).to(eq([]))
+    end
+  end  
 
 end
