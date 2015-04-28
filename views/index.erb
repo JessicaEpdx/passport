@@ -1,0 +1,18 @@
+<h1>Passport</h1>
+
+<p>You have been to all of these amazing places:</p>
+
+<ul>
+  <% @all_places.each() do |location| %>
+  <li><%= location.places() %></li>
+  <% end %>
+</ul>
+
+<p>Where else have you been?</p>
+
+<form action="/customs" method="post">
+  <label for="place">Type in a location</label>
+  <input id="place" name="place" type="text">
+
+  <button type="submit">Add Location</button>
+</form>
