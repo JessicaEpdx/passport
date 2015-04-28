@@ -25,5 +25,3 @@ enter locations into the form, locations will print out when you return to the h
 Licenses include MIT and GPL v2.
 
 Copyright Jessica Engel & Cory Ribson - 2015
-
- 
