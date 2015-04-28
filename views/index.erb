@@ -13,17 +13,17 @@
 
 <p>Where else have you been?</p>
 
-<form action="/customs" method="post">
+<form action="/customs" method="post" class="form">
   <label for="place">Type in a location</label>
   <input id="place" name="place" type="text">
 
   <button type="submit">Add Location</button>
 </form>
 
-<form action="/resetpassport" method="post">
+<form action="/resetpassport" method="post" class="form">
   <label for="reset">Would you like to reset your passport</label>
-  <input id="reset" name="reset" type="text">
-
+  <input id="reset" name="reset" type="radio" value="yes">Yes
+  <input id="reset" name="reset" type="radio" value="no"checked>No
   <button type="submit">Reset</button>
 </form>
 
