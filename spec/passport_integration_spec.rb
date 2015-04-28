@@ -7,6 +7,6 @@ describe('path for passport application', {:type=> :feature}) do
     visit('/')
     fill_in('place', :with=> 'Portland')
     click_button('Add Location')
-    expect('/').to have_content('Great you did it!')
+    expect(page).to have_content('Great you did it!')
   end
 end
