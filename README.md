@@ -9,10 +9,14 @@ Passport is a great way keep track of where you've been. Look at all of the wond
 --------
 
 install bundle to use Sinatra and Capybara
-    $ bundle
 
+  $ bundle
+
+    $ bundle
+    
 run the app
-    $ ruby app.rb
+
+  $ ruby app.rb
 
 ###Usage
 --------
