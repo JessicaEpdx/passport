@@ -15,6 +15,12 @@ post('/customs') do
   erb(:customs)
 end
 
+post('/customs') do
+  word_to_remove = params.fetch("remove")
+  passport = Passport.new(word_to_remove)
+  passport.remove(word_to_remove)
+end
+
 post('/resetpassport') do
   answer = params.fetch("reset")#some button click confirmation for reset
   if answer == "yes"

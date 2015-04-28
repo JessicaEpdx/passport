@@ -22,4 +22,7 @@ class Passport
     @@our_passport.push(self)
   end
 
+  define_method(:remove) do
+    @@our_passport.delete(self)
+  end
 end
