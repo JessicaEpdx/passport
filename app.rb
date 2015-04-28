@@ -14,3 +14,12 @@ post('/customs') do
   passport.add_place()
   erb(:customs)
 end
+
+post('/resetpassport') do
+  answer = params.fetch("reset")#some button click confirmation for reset
+  if answer == "yes"
+    Passport.clear()
+  else
+  end
+  erb(:resetpassport)
+end
